@@ -8,12 +8,10 @@
     <script src="js/vendor/angular.min.js"></script>
   </head>
   <body>
-    <h1>AngularJS - Blog-Test: {{1+2}}</h1>
+    <h1>AngularJS - Blog</h1>
 
     <main ng-controller="HomeController">
-      <div class="post" ng-repeat="post in posts">
-        <h2><a href>{{post.title}}</a></h2>
-      </div>
+      <blog-post model="posts"></blog-post>
     </main>
 
     <!-- Blog App -->
