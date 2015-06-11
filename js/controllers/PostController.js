@@ -1,4 +1,4 @@
-app.controller('HomeController', ['$scope', 'blogPostService', function($scope, blogPostService) {
+app.controller('PostController', ['$scope', 'blogPostService', function($scope, blogPostService) {
   $scope.posts = {};
 
   blogPostService.success(function(data) {
