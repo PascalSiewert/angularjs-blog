@@ -1,17 +1,11 @@
 <!DOCTYPE html>
-<html ng-app="BlogApp">
+<html>
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>AngularJS - Blog</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-  </head>
-  <body>
-    <h1>AngularJS - Blog</h1>
-
-    <main id="mainapp" ng-view>
-    </main>
 
     <script src="js/vendor/angular.min.js"></script>
     <script src="js/vendor/angular-route.min.js"></script>
@@ -28,5 +22,13 @@
 
     <!-- Services -->
     <script src="js/services/BlogPostService.js"></script>
+  </head>
+  <body ng-app="BlogApp">
+    <h1>AngularJS - Blog</h1>
+
+    <main ng-view>
+    </main>
+
+
   </body>
 </html>
