@@ -1,9 +1,9 @@
-app.directive('blogPost', function() {
+app.directive('blogPost',['$timeout', function() {
   return {
     restrict: 'E',
     scope: {
-      model: '='
+      postData: '='
     },
     templateUrl: 'js/directives/BlogPost.html'
   };
-});
+}]);

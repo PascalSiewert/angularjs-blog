@@ -1,10 +1,10 @@
-var app = angular.module('BlogApp', ['ngRoute']);
+var app = angular.module('BlogApp', ['ngRoute', 'ngAnimate']);
 
 app.config(function($routeProvider) {
   $routeProvider
     .when('/', {
       controller: 'PostController',
-      templateUrl: 'views/posts.html'
+      templateUrl: 'views/ShowPostsView.html'
     })
     .otherwise({
       redirectTo: '/'

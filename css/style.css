@@ -25,15 +25,17 @@ main {
   padding: 15px;
   box-shadow: 2px 2px 2px 1px #CCC;
   position: relative;
-  opacity: 0;
+}
+
+.post.ng-enter {
+  opacity: 1;
 
   transform: translateX(-50px);
-
   -webkit-transition: all 350ms ease-in-out;
   transition: all 350ms ease-in-out;
 }
 
-.post.show {
+.post.ng-enter-active {
   transform: translateX(0px);
   opacity: 1;
 }

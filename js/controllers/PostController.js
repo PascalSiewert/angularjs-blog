@@ -3,7 +3,5 @@ app.controller('PostController', ['$scope', 'blogPostService', function($scope, 
 
   blogPostService.success(function(data) {
     $scope.posts = data;
-
-    showElements();
   });
 }]);
