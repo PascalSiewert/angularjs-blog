@@ -1,7 +1,7 @@
-app.controller('PostController', ['$scope', 'blogPostService', function($scope, blogPostService) {
+app.controller('PostController', ['$scope', 'blogPostsService', function($scope, blogPostsService) {
   $scope.posts = {};
 
-  blogPostService.success(function(data) {
+  blogPostsService.success(function(data) {
     $scope.posts = data;
   });
 }]);
